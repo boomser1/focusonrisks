@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="witdh=device-width">
+    <meta name="description" content="practical health and safety, risk management and human resource solutions">
+    <meta name="keywords" content="Focus On Risks, Safety, Health and Safety">
+    <meta name="author" content="Samuel Hyde">
+    <title>Focus On Risks</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Focus</span> On Risks</h1>
+        </div>
+        <nav>
+          <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="workplace-assessments.html">Assessments &amp;
+                Investigations</a></li>
+            <li><a href="training.html">Training</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section>
+      <div class="slideshow-container">
+        <div class="mySlides fade"> <a href="service.html"><img src="img/banner.jpg"
+
+              style="width:100%"></a> </div>
+        <div class="mySlides fade"> <a href="workplace-assessments.html"><img src="img/banner3.jpg"
+
+              style="width:100%"></a> </div>
+        <div class="mySlides fade"> <a href="training.html"><img src="img/banner4.jpg"
+
+              style="width:100%"></a> </div>
+        <div class="mySlides fade"> <img src="img/banner5.jpg" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a> <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <div style="text-align:center"> <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span> <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" oneclick="currentSlide(4)"></span> </div>
+      <script>
+var slideIndex = 1;
+var timer = null;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  clearTimeout(timer);
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  clearTimeout(timer);
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n==undefined){n = ++slideIndex}
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  timer = setTimeout(showSlides, 5000);
+} 
+</script> </section>
+    <section id="newsletter">
+      <div class="container">
+        <h1>Subscribe To Our Newsletter</h1>
+        <form> <input placeholder="Enter Email..." type="email"> <button type="submit"
+
+            class="button_1">Subscribe</button> </form>
+      </div>
+    </section>
+    <section id="boxes">
+      <div class="container">
+        <div class="box">
+          <div style="text-align: center;"><img src="img/exclamation%20mark.png"
+
+              style="width: 106px; height: 122px;"></div>
+          <h3 style="text-align: center;">Minimise Workplace Risks</h3>
+          <ul>
+            <li style="text-align: center;"><a href="services.html">WHS/OHS
+                Management Systems</a></li>
+            <li style="text-align: center;"><a href="services.html">WHS/OHS
+                Audits – ISO 45001 OHMS, Self Insurance</a></li>
+            <li style="text-align: center;"><a href="services.html">Strategy
+                &amp; Plans</a></li>
+            <li style="text-align: center;"><a href="services.html">Risk
+                Assessments</a></li>
+            <li style="text-align: center;"><a href="workplace-assessments.html">Investigations</a></li>
+            <li style="text-align: center;"><a href="training.html">Training</a></li>
+            <li style="text-align: center;"><a href="services.html">HRM &amp;
+                Rehabilitation</a></li>
+          </ul>
+        </div>
+        <br>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h1><span class="first-letter">“ZERO HARM” is our mission, ‘Creating
+            Healthy Workplaces’ is our aim.</span></h1>
+        <p>At Focus On Risks we provide practical health and safety, risk
+          management and human resource solutions that are focussed on our
+          Clients needs, and are aimed at improving workplace productivity and
+          morale, and opportunities for increased business confidence and costs
+          savings. We pride ourselves in providing services to meet your
+          individual business needs that are:</p>
+        <p><span class="first-letter">S</span>treamlined <span class="first-letter">A</span>ffordable
+          <span class="first-letter">F</span>ast <span class="first-letter">E</span>ffective</p>
+        <p>Our team at Focus On Risks have extensive leadership, management and
+          hands on industry experience working for and within the Private and
+          Government sectors, including both large (65,000+ employees), medium
+          and small organisations. Our consultants are tertiary qualified and
+          are Accredited Auditors (Exemplar Global – Lead Auditor OHSMS &amp;
+          Compliance, Plant and Injury Management and QLD Self Insurance OHS
+          Auditor). We have experience across property, health, education,
+          emergency services, manufacturing, construction, retail, aviation,
+          mining and quarries, forestry, water, professional services (i.e.
+          engineering, design, legal, financial), and disability services. We
+          began Focus On Risks to provide business with a unique “One Stop
+          WHS/OHS and HR Service”. We value positive relationships and commit to
+          our clients for the long term.</p>
+        <div style="text-align: center;"><span class="orange">YOUR SUCCESS IS
+            OUR SUCCESS</span></div>
+      </div>
+    </section>
+    <footer>
+      <p>Focus On Risks, Copyright © 2019</p>
+    </footer>
+  </body>
+</html>
