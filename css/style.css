@@ -1,0 +1,251 @@
+﻿body{
+ font-family: Arial, Helvetica, sans-serif;
+ font-size:18px;
+ line-height:1.5;
+ padding:0;
+ margin:0;
+ background-color:#f4f4f4;
+}
+
+/* Global */
+.container{
+ width:80%;
+ margin:auto;
+ overflow:hidden;
+}
+
+ul{
+ margin:0;
+ padding:0;
+ list-style-type: none;
+}
+
+ul.checkmark li:before {
+    content:"\2713\0020";
+ color:#e8491d;
+ font-weight:bold;
+}
+
+ul.checkmark li{
+ list-style-position: outside;
+ text-indent: -1em;
+ padding: 10px;
+}
+
+ul.arrow li:before {
+    content:"\27a3";
+ color:#63BD4D;
+ font-weight:bold;
+}
+
+ul.arrow li{
+ list-style-position: outside;
+ text-indent: -1em;
+ padding: 10px;
+}
+
+.button_1{
+ height:38px;
+ background:#e8491d;
+ border:0;
+ padding-left:20px;
+ padding-right:20px;
+ color:#ffffff;
+}
+
+
+/* Header */
+header{
+ background:#35424a;
+ color:#ffffff;
+ padding-top:30px;
+ min-height:70px;
+ border-bottom:#e8491d 3px solid;
+}
+
+header a{
+ color:#ffffff;
+ text-decoration:none;
+ text-transform: uppercase;
+ font-size:16px;
+}
+
+header li{
+ float:left;
+ display:inline;
+ padding: 0 20px 0 20px;
+}
+
+header #branding{
+ float:left;
+ margin-bottom:20px;
+}
+
+header #branding h1{
+ margin:0;
+}
+
+header nav{
+ float:right;
+ margin-top:14px;
+}
+
+header .highlight, header .current a{
+ color:#e8491d;
+ font-weight:bold;
+}
+
+header a:hover{
+ color:#cccccc;
+ font-weight:bold;
+}
+
+/* Newsletter */
+#newsletter{
+ padding:15px;
+ color:#ffffff;
+ background:#35424a
+}
+
+#newsletter h1{
+ float:left;
+}
+
+#newsletter form{
+ float:right;
+ margin-top:15px;
+}
+
+#newsletter input[type="email"]{
+ padding:4px;
+ height:39px;
+ width:250px;
+}
+
+/* Boxes */
+
+#boxes{
+ margin-top:20px;
+}
+
+#boxes .box{
+ float:center;
+ text-align:center;
+ width:100%;
+ padding:10px;
+}
+
+#boxes .box img{
+ width:90px;
+}
+
+#boxes2{
+ margin-top:20px;
+}
+
+#boxes2 .box2{
+ float:left;
+ text-align:left;
+ width:50%;
+ padding:10px;
+}
+
+/* Footer */
+
+footer{
+ padding:20px;
+ margin-top:20px;
+ color:#ffffff;
+ background-color:#e8491d;
+ text-align:center;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Style that first letter! */
+.first-letter {
+  font-size: 20px;
+  line-height: 50px;
+  color:#e8491d;
+  font-weight:bold;
+}
+
+.orange{
+  font-size: 20px;
+  line-height: 50px;
+  color:#e8491d;
+  font-weight:bold;
+  text-align:right;
+} 
