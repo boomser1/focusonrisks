@@ -22,3 +22,4 @@ $headers .= "Reply-to: $vidistor_email \r\n;
 mail($to,$email_suject,$email_body,$headers);
 
 header("Location: index.html");
+>
